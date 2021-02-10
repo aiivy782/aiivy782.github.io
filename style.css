@@ -1,0 +1,38 @@
+@import url('http://fonts.cdnfonts.com/css/google-sans?styles=20575,20577,20573,20574');
+
+body {
+  background-color: #f5f5f5;
+}
+
+
+@media screen and (min-width: 300px) {
+.header {
+  font-family: 'Product Sans Black', sans-serif;
+  font-size: xx-large;
+  text-align: center;
+  margin-top: 18.125rem;
+}
+
+.aboutme {
+  font-family: 'Product Sans Medium', sans-serif;
+  text-align: center;
+  font-size: large;
+}
+}
+
+@media screen and (min-width: 500px) {
+  .header {
+    font-family: 'Product Sans Black', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 18.125rem;
+    animation-duration: 1s;
+  }
+  
+  .aboutme {
+    font-family: 'Product Sans Medium', sans-serif;
+    text-align: center;
+    font-size: x-large;
+    animation-duration: 1s;
+  }
+}
