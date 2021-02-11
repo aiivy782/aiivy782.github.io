@@ -1,22 +1,93 @@
-@import url('http://fonts.cdnfonts.com/css/google-sans?styles=20575,20577,20573,20574');
+@font-face {
+  font-family: 'Bold';
+  src: local('Product Sans Bold'),
+  local('Google Sans Bold'),
+  url('../fonts/bold.woff') format('woff'),
+  url('../fonts/bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Regular';
+  src: local('Product Sans Regular'),
+  local('Google Sans Regular'),
+  url('../fonts/regular.woff') format('woff'),
+  url('../fonts/regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   background-color: #f5f5f5;
 }
 
+.github {
+  margin-right: 2.5%;
+  color: #202020;
+  text-decoration: none;
+  font-family: 'Product Sans Regular';
+  font-size: medium;
+  font-weight: bold;
+}
+
+.github:hover {
+  color: #202020;
+}
+
+.telegram {
+  margin-right: 2.5%;
+  color: #0088cc;
+  text-decoration: none;
+  font-family: 'Product Sans Regular';
+  font-size: medium;
+  font-weight: bold;
+}
+
+.telegram:hover {
+  color: #0088cc;
+}
+
+.youtube {
+  margin-right: 2.5%;
+  color: #FF0000;
+  text-decoration: none;
+  font-family: 'Product Sans Regular';
+  font-size: medium;
+  font-weight: bold;
+}
+
+.youtube:hover {
+  color: #FF0000;
+}
+
+.spotify {
+  margin-right: 2.5%;
+  color: #1db954;
+  text-decoration: none;
+  font-family: 'Product Sans Regular';
+  font-size: medium;
+  font-weight: bold;
+}
+
+.spotify:hover {
+  color: #1db954;
+}
 
 @media screen and (min-width: 300px) {
 .header {
-  font-family: 'Product Sans Black', sans-serif;
+  font-family: 'Bold', sans-serif;
   font-size: xx-large;
+  font-weight: bold;
   text-align: center;
-  margin-top: 18.125rem;
+  margin-top: 16.125rem;
 }
 
 .aboutme {
-  font-family: 'Product Sans Medium', sans-serif;
+  font-family: 'Regular', sans-serif;
   text-align: center;
   font-size: large;
+  font-weight: normal;
 }
 }
 
