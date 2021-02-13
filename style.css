@@ -77,6 +77,10 @@ html {
   }
 }
 
+.donate {
+  margin-top: 25px;
+}
+
 .telegram {
   margin-right: 2.5%;
   color: #0088cc;
@@ -122,7 +126,7 @@ html {
   font-size: xx-large;
   font-weight: bold;
   text-align: center;
-  margin-top: 16.125rem;
+  margin-top: 16rem;
 }
 
 .aboutme {
@@ -138,7 +142,7 @@ html {
     font-family: 'Product Sans Black', sans-serif;
     font-size: xx-large;
     text-align: center;
-    margin-top: 18.125rem;
+    margin-top: 16;
     animation-duration: 1s;
   }
   
