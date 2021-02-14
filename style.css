@@ -31,7 +31,7 @@ html {
     margin-right: 2.5%;
     color: #e5e5e5;
     text-decoration: none;
-    font-family: 'Product Sans Regular';
+    font-family: 'Regular';
     font-size: medium;
     font-weight: bold;
   }
@@ -67,7 +67,7 @@ html {
     margin-right: 2.5%;
     color: #202020;
     text-decoration: none;
-    font-family: 'Product Sans Regular';
+    font-family: 'Regular';
     font-size: medium;
     font-weight: bold;
   }
@@ -85,7 +85,7 @@ html {
   margin-right: 2.5%;
   color: #0088cc;
   text-decoration: none;
-  font-family: 'Product Sans Regular';
+  font-family: 'Regular';
   font-size: medium;
   font-weight: bold;
 }
@@ -98,7 +98,7 @@ html {
   margin-right: 2.5%;
   color: #FF0000;
   text-decoration: none;
-  font-family: 'Product Sans Regular';
+  font-family: 'Regular';
   font-size: medium;
   font-weight: bold;
 }
@@ -111,7 +111,7 @@ html {
   margin-right: 2.5%;
   color: #1db954;
   text-decoration: none;
-  font-family: 'Product Sans Regular';
+  font-family: 'Regular';
   font-size: medium;
   font-weight: bold;
 }
@@ -139,7 +139,7 @@ html {
 
 @media screen and (min-width: 500px) {
   .header {
-    font-family: 'Product Sans Black', sans-serif;
+    font-family: 'Bold', sans-serif;
     font-size: xx-large;
     text-align: center;
     margin-top: 16;
@@ -147,7 +147,7 @@ html {
   }
   
   .aboutme {
-    font-family: 'Product Sans Medium', sans-serif;
+    font-family: 'Regular', sans-serif;
     text-align: center;
     font-size: x-large;
     animation-duration: 1s;
