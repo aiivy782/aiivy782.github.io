@@ -24,7 +24,7 @@ html {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #202020;
+    background-color: #101010;
   }
 
   .github {
@@ -57,10 +57,9 @@ html {
   }
 }
 
-
 @media (prefers-color-scheme: light) {
   body {
-    background-color: #f5f5f5;
+    background-color: #ffffff;
   }
 
   .github {
