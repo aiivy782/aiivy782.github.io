@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'Bold';
+  src: local('Product Sans Bold'),
+  local('Google Sans Bold'),
+  url('../fonts/bold.woff') format('woff'),
+  url('../fonts/bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Regular';
+  src: local('Product Sans Regular'),
+  local('Google Sans Regular'),
+  url('../fonts/regular.woff') format('woff'),
+  url('../fonts/regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+html {
+  user-select: none;
+}
+
+.donate {
+  margin-top: 25px;
+}
+
+body {
+  background-image: url('bg.webp');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color:#171717;
+}
+
+p {
+  color: #fff;
+}
+
+.btn {
+  font-family: 'Bold', sans-serif;
+}
+
+.github {
+  margin-right: 2.5%;
+  color: #ddd;
+  text-decoration: none;
+  font-family: 'Regular';
+  font-size: medium;
+  font-weight: bold;
+}
+
+.github:hover {
+  margin-right: 2.5%;
+  color: #ddd;
+  text-decoration: none;
+  font-family: 'Regular';
+  font-size: medium;
+  font-weight: bold;
+}
+
+.telegram {
+  margin-right: 2.5%;
+  color: #0088cc;
+  text-decoration: none;
+  font-family: 'Regular';
+  font-size: medium;
+  font-weight: bold;
+}
+
+.telegram:hover {
+  color: #0088cc;
+}
+
+.youtube {
+  margin-right: 2.5%;
+  color: #FF0000;
+  text-decoration: none;
+  font-family: 'Regular';
+  font-size: medium;
+  font-weight: bold;
+}
+
+.youtube:hover {
+  color: #FF0000;
+}
+
+.spotify {
+  margin-right: 2.5%;
+  color: #1db954;
+  text-decoration: none;
+  font-family: 'Regular';
+  font-size: medium;
+  font-weight: bold;
+}
+
+.spotify:hover {
+  color: #1db954;
+}
+
+@media screen and (min-width: 300px) {
+.header {
+  font-family: 'Bold', sans-serif;
+  font-size: xx-large;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 16rem;
+}
+
+.aboutme {
+  font-family: 'Regular', sans-serif;
+  text-align: center;
+  font-size: large;
+  font-weight: normal;
+}
+
+.donate {
+  margin-top: 5vh;
+}
+}
+
+@media screen and (min-width: 500px) {
+  .header {
+    font-family: 'Bold', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 16rem;
+    animation-duration: 1s;
+  }
+
+  .aboutme {
+    font-family: 'Regular', sans-serif;
+    text-align: center;
+    font-size: x-large;
+    animation-duration: 1s;
+  }
+}
