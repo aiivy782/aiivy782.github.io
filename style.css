@@ -45,9 +45,6 @@ p {
   font-family: 'Bold', sans-serif;
 }
 
-#hacker:hover { display: none; }
-#hacker:hover:after { content: 'h$#ke&'; }
-
 .github {
   margin-right: 2.5%;
   color: #ddd;
@@ -121,13 +118,6 @@ p {
   font-weight: normal;
 }
 
-.hint {
-  font-family: 'Regular', sans-serif;
-  text-align: center;
-  font-size: medium;
-  font-weight: normal;
-}
-
 .donate {
   margin-top: 5vh;
 }
@@ -147,13 +137,5 @@ p {
     text-align: center;
     font-size: x-large;
     animation-duration: 1s;
-  }
-
-  .hint {
-  font-family: 'Regular', sans-serif;
-  text-align: center;
-  font-size: medium;
-  font-weight: normal;
-  animation-duration: 1s;
   }
 }
