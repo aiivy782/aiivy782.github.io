@@ -24,10 +24,6 @@ html {
   user-select: none;
 }
 
-.donate {
-  margin-top: 25px;
-}
-
 body {
   background-image: url('bg.webp');
   background-position: center center;
