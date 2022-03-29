@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Bold';
-  src: local('Product Sans Bold'),
-  local('Google Sans Bold'),
+  src: local('Proxima Nova Black Italic'),
+  local('Proxima Nova Black Italic'),
   url('../fonts/bold.woff') format('woff'),
   url('../fonts/bold.woff2') format('woff2');
   font-weight: bold;
@@ -99,6 +99,10 @@ p {
   color: #1db954;
 }
 
+.email-me {
+  font-family: 'Regular';
+}
+
 @media screen and (min-width: 300px) {
 #header {
   font-family: 'Bold', sans-serif;
@@ -117,6 +121,7 @@ p {
 
 .email-me {
   margin-top: 5vh;
+  font-family: 'Regular';
 }
 }
 
@@ -134,5 +139,10 @@ p {
     text-align: center;
     font-size: x-large;
     animation-duration: 1s;
+  }
+
+  .email-me {
+    margin-top: 5vh;
+    font-family: 'Regular';
   }
 }
