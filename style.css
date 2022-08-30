@@ -1,150 +1,161 @@
 @font-face {
-  font-family: 'Bold';
-  src: local('Proxima Nova Black Italic'),
-  local('Proxima Nova Black Italic'),
-  url('../fonts/bold.woff') format('woff'),
-  url('../fonts/bold.woff2') format('woff2');
-  font-weight: bold;
-  font-style: normal;
+  font-family: 'Gotham Ultra';
+  src: url(/fonts/Gotham-Ultra.woff),
+  url(/fonts/Gotham-Ultra.woff2);
 }
 
 @font-face {
-  font-family: 'Regular';
-  src: local('Product Sans Regular'),
-  local('Google Sans Regular'),
-  url('../fonts/regular.woff') format('woff'),
-  url('../fonts/regular.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'Gotham Medium';
+  src: url(/fonts/Gotham-Medium.woff),
+  url(/fonts/Gotham-Medium.woff2);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-
-html {
-  user-select: none;
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url(/fonts/Roboto-Mono.woff),
+  url(/fonts/Roboto-Mono.woff2);
 }
 
 body {
-  background-image: url('bg.png');
+  background-image: url(img/bg.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-color:#171717;
+  user-select: none;
 }
 
-p {
-  color: #fff;
+.title {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.btn {
-  font-family: 'Bold', sans-serif;
-}
-
-.github {
-  margin-right: 2.5%;
-  margin-left: 2.5%;
-  color: #ddd;
-  text-decoration: none;
-  font-family: 'Regular';
-  font-size: medium;
-  font-weight: bold;
-}
-
-.github:hover {
-  margin-right: 2.5%;
-  color: #ddd;
-  text-decoration: none;
-  font-family: 'Regular';
-  font-size: medium;
-  font-weight: bold;
-}
-
-.telegram {
-  margin-right: 2.5%;
-  color: #0088cc;
-  text-decoration: none;
-  font-family: 'Regular';
-  font-size: medium;
-  font-weight: bold;
-}
-
-.telegram:hover {
-  color: #0088cc;
-}
-
-.youtube {
-  margin-right: 2.5%;
-  color: #FF0000;
-  text-decoration: none;
-  font-family: 'Regular';
-  font-size: medium;
-  font-weight: bold;
-}
-
-.youtube:hover {
-  color: #FF0000;
-}
-
-.spotify {
-  margin-right: 2.5%;
-  color: #1db954;
-  text-decoration: none;
-  font-family: 'Regular';
-  font-size: medium;
-  font-weight: bold;
-}
-
-.spotify:hover {
-  color: #1db954;
-}
-
-.email-me {
-  font-family: 'Regular';
-}
-
-@media screen and (min-width: 300px) {
-#header {
-  font-family: 'Bold', sans-serif;
-  font-size: xx-large;
-  font-weight: bold;
+.links {
   text-align: center;
-  margin-top: 15rem;
 }
 
-.aboutme {
-  font-family: 'Regular', sans-serif;
-  text-align: center;
-  font-size: large;
-  font-weight: normal;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
-}
-
-.email-me {
-  margin-top: 5vh;
-  font-family: 'Regular';
-}
-}
-
-@media screen and (min-width: 500px) {
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  #avatar {
+    width: 10%;
+    height: 100%;
+    box-shadow: 0px 0px 20px #222;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+  
   #header {
-    font-family: 'Bold', sans-serif;
-    font-size: xx-large;
+    font-family: 'Gotham Ultra', sans-serif;
     text-align: center;
-    margin-top: 16rem;
-    animation-duration: 1s;
+    color: #fff;
+    font-size: 450%;
+    text-shadow: 0px 0px 20px #222;
   }
-
-  .aboutme {
-    font-family: 'Regular', sans-serif;
+  
+  #desc {
+    font-family: 'Gotham Medium', sans-serif;
     text-align: center;
-    font-size: x-large;
-    animation-duration: 1s;
+    color: #fff;
+    font-size: 250%;
+    margin-top: -5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-shadow: 0px 0px 20px #222;
   }
+}
 
-  .email-me {
-    margin-top: 5vh;
-    font-family: 'Regular';
+#avatar {
+  width: 10%;
+  height: 100%;
+  box-shadow: 0px 0px 20px #222;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+#header {
+  font-family: 'Gotham Ultra', sans-serif;
+  text-align: center;
+  color: #fff;
+  font-size: 450%;
+  text-shadow: 0px 0px 20px #222;
+}
+
+#desc {
+  font-family: 'Gotham Medium', sans-serif;
+  text-align: center;
+  color: #fff;
+  font-size: 250%;
+  margin-top: -5%;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-shadow: 0px 0px 20px #222;
+}
+
+#telegram {
+  color: #0088CC;
+  font-family: 'Roboto Mono', sans-serif;
+  letter-spacing: 0px;
+}
+
+#spotify {
+  color: #1DB954;
+  font-family: 'Roboto Mono', sans-serif;
+  letter-spacing: 0px;
+}
+
+#github {
+  color: #e5e5e5;
+  font-family: 'Roboto Mono', sans-serif;
+  letter-spacing: 0px;
+}
+
+#youtube {
+  color: #ff0000;
+  font-family: 'Roboto Mono', sans-serif;
+  letter-spacing: 0px;
+}
+
+#instagram {
+  color: #cd486b;
+  font-family: 'Roboto Mono', sans-serif;
+  letter-spacing: 0px;
+}
+
+#vk {
+  color: #4C75A3;
+  font-family: 'Roboto Mono', sans-serif;
+  letter-spacing: 0px;
+}
+
+@media only screen and (min-width: 577px) {
+  #avatar {
+    width: 25%;
+    height: 25%;
+    box-shadow: 0px 0px 20px #222;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  #header {
+    font-family: 'Gotham Ultra', sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 350%;
+    text-shadow: 0px 0px 20px #222;
+  }
+  
+  #desc {
+    font-family: 'Gotham Medium', sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 150%;
+    margin-top: -5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-shadow: 0px 0px 20px #222;
   }
 }
