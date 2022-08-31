@@ -4,21 +4,38 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,700,0,0">
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-      <div class="title animate__animated animate__fadein">
-        <img src="img/david.jpg" id="avatar">
-        <p id="header">YEGOR MUNTYAN</p>
-        <p id="desc">14 y.o. web dev, music producer, 3D generalist (maybe) & maaany more</p>
-        <div class="links">
-          <a href="https://t.me/ai_ivy" id="telegram">Telegram</a>
-          <a href="https://open.spotify.com/artist/06Jb07w3rc7Flgl0KyG57S" id="spotify">Spotify</a>
-          <a href="https://github.com/aiivy782" id="github">GitHub</a>
-          <a href="https://www.youtube.com/channel/UCPet-Zx6OR_aMqKSTzQR7lQ" id="youtube">YouTube</a>
-          <a href="https://instgram.com/aiivy782" id="instagram">Instagram</a>
-          <a href="https://vk.com/aiivy" id="vk">VK</a>
+    <div class="preloader">
+      <div class="preloader_row">
+        <div class="preloader_item">
+          <img src="img/preloader_icon.svg" alt="preloader">
         </div>
       </div>
+    </div>
+    <script>
+      window.onload = function () {
+        document.body.classList.add('loaded_hiding');
+        window.setTimeout(function () {
+          document.body.classList.add('loaded');
+          document.body.classList.remove('loaded_hiding');
+        }, 500);
+      }
+    </script>
+    <div class="title animate__animated animate__fadein">
+      <img src="img/david.jpg" id="avatar">
+      <p id="header">YEGOR MUNTYAN</p>
+      <p id="desc">14 y.o. web dev, music producer, 3D generalist (maybe) & maaany more</p>
+      <div class="links">
+        <a href="https://t.me/ai_ivy" id="telegram">Telegram</a>
+        <a href="https://open.spotify.com/artist/06Jb07w3rc7Flgl0KyG57S" id="spotify">Spotify</a>
+        <a href="https://github.com/aiivy782" id="github">GitHub</a>
+        <a href="https://www.youtube.com/channel/UCPet-Zx6OR_aMqKSTzQR7lQ" id="youtube">YouTube</a>
+        <a href="https://instgram.com/aiivy782" id="instagram">Instagram</a>
+        <a href="https://vk.com/aiivy" id="vk">VK</a>
+      </div>
+    </div>
   </body>
 </html>
