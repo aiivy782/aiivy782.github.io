@@ -36,39 +36,7 @@ body {
   text-align: center;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 576px) {
-  #avatar {
-    width: 10%;
-    height: 100%;
-    box-shadow: 0px 0px 20px #222;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
-  }
-  
-  #header {
-    font-family: 'Gotham Ultra', sans-serif;
-    text-align: center;
-    color: #fff;
-    font-size: 450%;
-    text-shadow: 0px 0px 20px #222;
-  }
-  
-  #desc {
-    font-family: 'Gotham Medium', sans-serif;
-    text-align: center;
-    color: #fff;
-    font-size: 250%;
-    margin-top: -5%;
-    margin-left: 20%;
-    margin-right: 20%;
-    text-shadow: 0px 0px 20px #222;
-  }
-}
-
 #avatar {
-  width: 10%;
-  height: 100%;
   box-shadow: 0px 0px 20px #222;
   border-radius: 50%;
   display: block;
@@ -79,7 +47,6 @@ body {
   font-family: 'Gotham Ultra', sans-serif;
   text-align: center;
   color: #fff;
-  font-size: 450%;
   text-shadow: 0px 0px 20px #222;
 }
 
@@ -87,75 +54,117 @@ body {
   font-family: 'Gotham Medium', sans-serif;
   text-align: center;
   color: #fff;
-  font-size: 250%;
+  font-size: 150%;
   margin-top: -5%;
-  margin-left: 20%;
-  margin-right: 20%;
   text-shadow: 0px 0px 20px #222;
+}
+
+@media screen and (min-width: 360px) and (max-width: 576px) {
+  #avatar {
+    width: 70%;
+    height: 70%;
+  }
+
+  #header {
+    font-size: 250%;
+  }
+
+  #desc {
+    font-size: 150%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 868px) {
+  #avatar {
+    width: 60%;
+    height: 60%;
+  }
+
+  #header {
+    font-size: 300%;
+  }
+
+  #desc {
+    font-size: 225%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media screen and (min-width: 869px) and (max-width: 1000px) {
+  #avatar {
+    width: 50%;
+    height: 50%;
+  }
+
+  #header {
+    font-size: 350%;
+  }
+
+  #desc {
+    font-size: 250%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  #avatar {
+    width: 30%;
+    height: 30%;
+  }
+
+  #header {
+    font-size: 350%;
+  }
+
+  #desc {
+    font-size: 250%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
 
 #telegram {
   color: #0088CC;
   font-family: 'Roboto Mono', sans-serif;
+  font-weight: 800;
   letter-spacing: 0px;
 }
 
 #spotify {
   color: #1DB954;
   font-family: 'Roboto Mono', sans-serif;
+  font-weight: 800;
   letter-spacing: 0px;
 }
 
 #github {
   color: #e5e5e5;
   font-family: 'Roboto Mono', sans-serif;
+  font-weight: 800;
   letter-spacing: 0px;
 }
 
 #youtube {
   color: #ff0000;
   font-family: 'Roboto Mono', sans-serif;
+  font-weight: 800;
   letter-spacing: 0px;
 }
 
 #instagram {
   color: #cd486b;
   font-family: 'Roboto Mono', sans-serif;
+  font-weight: 800;
   letter-spacing: 0px;
 }
 
 #vk {
   color: #4C75A3;
   font-family: 'Roboto Mono', sans-serif;
+  font-weight: 800;
   letter-spacing: 0px;
-}
-
-@media only screen and (min-width: 577px) {
-  #avatar {
-    width: 25%;
-    height: 25%;
-    box-shadow: 0px 0px 20px #222;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
-  }
-  
-  #header {
-    font-family: 'Gotham Ultra', sans-serif;
-    text-align: center;
-    color: #fff;
-    font-size: 350%;
-    text-shadow: 0px 0px 20px #222;
-  }
-  
-  #desc {
-    font-family: 'Gotham Medium', sans-serif;
-    text-align: center;
-    color: #fff;
-    font-size: 150%;
-    margin-top: -5%;
-    margin-left: 20%;
-    margin-right: 20%;
-    text-shadow: 0px 0px 20px #222;
-  }
 }
