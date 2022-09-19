@@ -16,20 +16,12 @@
   url(/fonts/Roboto-Mono.woff2);
 }
 
-@font-face {
-  font-family: 'Hack Attack';
-  src: url(/fonts/HackAttack-Bold.woff),
-  url(/fonts/HackAttack-Bold.woff2);
-}
-
 body {
-  /*background: #151515;
-  background-image: linear-gradient(#202020 .075em, transparent .075em), linear-gradient(90deg, #202020 .075em, transparent .075em);
-  background-size: 2em 2em;
-  user-select: none;*/
   background-color: #151515;
   background-size: 35px 35px;
   background-image: radial-gradient(circle, #353535 1px, #000 1px);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  user-select: none;
 }
 
 .title {
@@ -55,23 +47,6 @@ body {
   text-align: center;
   color: #fff;
   text-shadow: 0px 0px 20px #000;
-  animation: 5s infinite ease-in-out;
-  animation-name: fontChange;
-}
-
-@keyframes fontChange {
-0% {
-  font-family: 'Gotham Ultra', sans-serif;
-}
-5% {
-  font-family: 'Hack Attack', sans-serif;
-}
-6% {
-  font-family: 'Gotham Ultra', monospace;
-}
-100% {
-  font-family: 'Gotham Ultra', monospace;
-}
 }
 
 #desc {
@@ -191,6 +166,14 @@ body {
   font-family: 'Roboto Mono', sans-serif;
   font-weight: 800;
   letter-spacing: 0px;
+}
+
+#unsplash {
+  color: #000;
+  font-family: 'Roboto Mono', sans-serif;
+  font-weight: 800;
+  letter-spacing: 0px;
+  text-shadow: -1px -1px 0 #e5e5e5, 1px -1px 0 #e5e5e5, -1px 1px 0 #e5e5e5, 1px 1px 0 #e5e5e5;
 }
 
 .preloader {
