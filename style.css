@@ -14,23 +14,8 @@
 }
 
 body {
-	background: linear-gradient(-30deg, #324547, #6C96AD, #A3C1F5, #85CFD6, #F2E8D6);
-	background-size: 400% 400%;
-	animation: gradient 15s ease-in-out infinite;
+	background: linear-gradient(45deg, #2F6345, #284D2D);
 }
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
 
 .title {
   position: fixed;
