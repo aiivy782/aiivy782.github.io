@@ -174,6 +174,13 @@ body {
   letter-spacing: 0px;
 }
 
+#bandlink {
+  color: #d71a46;
+  font-family: 'Roboto Mono', sans-serif;
+  font-weight: 800;
+  letter-spacing: 0px;
+}
+
 #artstation {
   color: #13AFF0;
   font-family: 'Roboto Mono', sans-serif;
