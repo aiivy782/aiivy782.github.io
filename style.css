@@ -15,6 +15,7 @@
 
 html {
   user-select: none;
+  overflow: hidden;
 }
 
 svg {
@@ -29,6 +30,22 @@ body {
   margin: 0;
   padding: 0;
 }
+video#bgvideo {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  filter: brightness(50%);
+  z-index: -2;
+}
+
+video::-webkit-media-controls-panel {
+  display: none !important;
+  opacity: 1 !important;
+}
 
 .background {
   position: relative;
@@ -36,11 +53,12 @@ body {
   height: 100vh;
   overflow: hidden;
   background-color: #111;
+  background: url(/night_cloudy.webm) fixed center;
 }
 
 .background::after {
   content: '';
-  position: absolute;
+  position: fixed;
   width: 200vw;
   height: 200vh;
   left: -50%;
@@ -48,8 +66,9 @@ body {
   background-image: url(/img/grain_profile.png);
   z-index: 1;
   animation: grain 0.5s steps(6) infinite;
-  opacity: 30%;
+  opacity: 100%;
   pointer-events: none;
+  z-index: -1;
 }
 
 @keyframes grain {
@@ -111,16 +130,16 @@ body {
 
 @media screen and (min-width: 577px) and (max-width: 868px) {
   #avatar {
-    width: 60%;
-    height: 60%;
+    width: 70%;
+    height: 70%;
   }
 
   #header {
-    font-size: 300%;
+    font-size: 250%;
   }
 
   #desc {
-    font-size: 225%;
+    font-size: 150%;
     margin-left: 10%;
     margin-right: 10%;
   }
@@ -133,11 +152,11 @@ body {
   }
 
   #header {
-    font-size: 350%;
+    font-size: 250%;
   }
 
   #desc {
-    font-size: 250%;
+    font-size: 150%;
     margin-left: 10%;
     margin-right: 10%;
   }
@@ -154,7 +173,7 @@ body {
   }
 
   #desc {
-    font-size: 250%;
+    font-size: 225%;
     margin-left: 10%;
     margin-right: 10%;
   }
