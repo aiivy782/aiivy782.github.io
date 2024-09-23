@@ -1,21 +1,22 @@
 @font-face {
-  font-family: 'Benzin Extra-Bold';
-  src: url(/fonts/benzin_extra_bold.woff2);
+  font-family: 'IBM Plex Mono';
+  src: url(/fonts/ibmplexmono_medium.woff2);
 }
 
 @font-face {
-  font-family: 'Benzin Medium';
-  src: url(/fonts/benzin_medium.woff2);
+  font-family: 'Craftwork Grotesk';
+  src: url(/fonts/craftwork_grotesk.woff2);
 }
 
 @font-face {
-  font-family: 'Roboto Mono';
-  src: url(/fonts/roboto_mono.woff2);
+  font-family: 'PretendardJP Regular';
+  src: url(/fonts/pretendard_jp_regular.woff2);
 }
 
 html {
   user-select: none;
   overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
 }
 
 svg {
@@ -30,6 +31,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 video#bgvideo {
   object-fit: cover;
   width: 100vw;
@@ -38,7 +40,7 @@ video#bgvideo {
   top: 0;
   left: 0;
   pointer-events: none;
-  filter: brightness(50%);
+  filter: brightness(60%);
   z-index: -2;
 }
 
@@ -80,6 +82,45 @@ video::-webkit-media-controls-panel {
   90% {transform: translate(-1%,7%);}
 }
 
+.lang_selector img {
+  cursor: pointer;
+  background: #111;
+  border-radius: 50%;
+  margin-top: 20%;
+  margin-left: 20%;
+}
+
+.lang_selector {
+  display: inline-block;
+}
+
+.lang_list a {
+  display: block;
+  color: #e5e5e5;
+  text-decoration: none;
+  font-family: 'IBM Plex Mono', sans-serif;
+  padding: 10px 15px;
+}
+
+.lang_selector .lang_list {
+  display: none;
+  position: absolute;
+  background-color: #111;
+  min-width: 100px;
+}
+
+.lang_selector:hover .lang_list {
+  display: block;
+}
+
+.lang_list a:hover {
+  background-color: #222;
+}
+
+#jp {
+  font-family: 'PretendardJP Regular', 'sans-serif';
+}
+
 .title {
   position: fixed;
   left: 50%;
@@ -98,15 +139,15 @@ video::-webkit-media-controls-panel {
 }
 
 #header {
-  font-family: 'Benzin Extra-Bold', sans-serif;
+  font-family: 'Craftwork Grotesk', sans-serif;
   text-align: center;
-  color: #fff;
+  color: #e5e5e5;
 }
 
 #desc {
-  font-family: 'Benzin Medium', sans-serif;
+  font-family: 'IBM Plex Mono', sans-serif;
   text-align: center;
-  color: #fff;
+  color: #e5e5e5;
   font-size: 150%;
   margin-top: -5%;
 }
@@ -181,49 +222,49 @@ video::-webkit-media-controls-panel {
 
 #telegram {
   color: #0088CC;
-  font-family: 'Roboto Mono', sans-serif;
+  font-family: 'IBM Plex Mono', sans-serif;
   font-weight: 800;
   letter-spacing: 0px;
 }
 
 #spotify {
   color: #1DB954;
-  font-family: 'Roboto Mono', sans-serif;
+  font-family: 'IBM Plex Mono', sans-serif;
   font-weight: 800;
   letter-spacing: 0px;
 }
 
 #bandlink {
   color: #d71a46;
-  font-family: 'Roboto Mono', sans-serif;
+  font-family: 'IBM Plex Mono', sans-serif;
   font-weight: 800;
   letter-spacing: 0px;
 }
 
 #artstation {
   color: #13AFF0;
-  font-family: 'Roboto Mono', sans-serif;
+  font-family: 'IBM Plex Mono', sans-serif;
   font-weight: 800;
   letter-spacing: 0px;
 }
 
 #github {
   color: #e5e5e5;
-  font-family: 'Roboto Mono', sans-serif;
+  font-family: 'IBM Plex Mono', sans-serif;
   font-weight: 800;
   letter-spacing: 0px;
 }
 
 #instagram {
   color: #cd486b;
-  font-family: 'Roboto Mono', sans-serif;
+  font-family: 'IBM Plex Mono', sans-serif;
   font-weight: 800;
   letter-spacing: 0px;
 }
 
 #vk {
   color: #4C75A3;
-  font-family: 'Roboto Mono', sans-serif;
+  font-family: 'IBM Plex Mono', sans-serif;
   font-weight: 800;
   letter-spacing: 0px;
 }
