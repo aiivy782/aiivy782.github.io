@@ -1,0 +1,223 @@
+.jetbrains-mono {
+  font-family: "JetBrains Mono", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  user-select: none;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+@media (max-width: 599px) {
+  .inline-container { width: 80vw; }
+  .links-wrapper { width: 80vw; }
+  #avatar { width: 50vw; height: 50vw; }
+  #line-break { height: 2vh; }
+  #title { font-size: 11vw; }
+  #short-bio { font-size: 5vw; }
+  #bio-title { font-size: 11vw; }
+  #bio { font-size: 3.25vw; }
+  #links-title { font-size: 11vw; }
+  .links { font-size: 5vw; }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  .inline-container { width: 58vw; }
+  .links-wrapper { width: 58vw; }
+  #avatar { width: 40vw; height: 40vw; }
+  #line-break { height: 2vh; }
+  #title { font-size: 8vw; }
+  #short-bio { font-size: 3.5vw; }
+  #bio-title { font-size: 8vw; }
+  #bio { font-size: 2.5vw; }
+  #links-title { font-size: 8vw; }
+  .links { font-size: 4vw; }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .inline-container { width: 50vw; }
+  .links-wrapper { width: 50vw; }
+  #avatar { width: 32.5vw; height: 32.5vw; }
+  #line-break { height: 2vh; }
+  #title { font-size: 6.75vw; }
+  #short-bio { font-size: 2.75vw; }
+  #bio-title { font-size: 6.75vw; }
+  #bio { font-size: 1.75vw; }
+  #links-title { font-size: 6.75vw; }
+  .links { font-size: 3vw; }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .inline-container { width: 40vw; }
+  .links-wrapper { width: 40vw; }
+  #avatar { width: 31vw; height: 31vw; }
+  #line-break { height: 3vh; }
+  #title { font-size: 5.5vw; }
+  #short-bio { font-size: 2.5vw; }
+  #bio-title { font-size: 5.5vw; }
+  #bio { font-size: 1.5vw; }
+  #links-title { font-size: 5.5vw; }
+  .links { font-size: 2.5vw; }
+}
+
+@media (min-width: 1200px) {
+  .inline-container { width: 36vw; }
+  .links-wrapper { width: 36vw; }
+  #line-break { height: 3vh; }
+  #avatar { width: 20vw; height: 20vw; }
+  #title { font-size: 5vw; }
+  #short-bio { font-size: 2vw; }
+  #bio-title { font-size: 5vw; }
+  #bio { font-size: 1.25vw; }
+  #links-title { font-size: 5vw; }
+  .links { font-size: 2vw; }
+}
+
+::-webkit-scrollbar {
+  width: 0.5vw;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.language-changer {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+#language-select {
+  margin: 0;
+  width: 100px;
+  padding: 5px;
+  font-size: 15px;
+  border: 1px solid #f1f1f1;
+  height: 30px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(/img/language.svg) 93% / 15% no-repeat #f1f1f1;
+}
+
+#home-container {
+  background-color: #1a1b1e;
+  position: relative;
+}
+
+#title {
+  margin: 0;
+  text-align: center;
+  color: #f1f1f1;
+  font-weight: 500;
+}
+
+#short-bio {
+  margin: 0;
+  text-align: justify;
+  color: #f1f1f1;
+  font-weight: 300;
+}
+
+.inline-container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+#avatar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#bio-container {
+  background-color: #f1f1f1;
+}
+
+.bio-div {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bio {
+  margin: 0;
+  text-align: justify;
+  color: #1a1b1e;
+  font-weight: 300;
+}
+
+#bio-title {
+  margin: 0;
+  text-align: center;
+  color: #1a1b1e;
+  font-weight: 500;
+}
+
+#links-container {
+  background-color: #1a1b1e;
+}
+
+.links-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#links-title {
+  margin: 0;
+  color: #f1f1f1;
+  font-weight: 500;
+}
+
+#links-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.links {
+  color: #f1f1f1;
+  font-weight: 300;
+}
+
+.links:hover {
+  color: #ccc;
+}
