@@ -1,7 +1,12 @@
-.jetbrains-mono {
-  font-family: "JetBrains Mono", serif;
-  font-optical-sizing: auto;
+.ibm-plex-mono-light {
+  font-family: "IBM Plex Mono", serif;
   font-weight: 300;
+  font-style: normal;
+}
+
+.ibm-plex-mono-medium {
+  font-family: "IBM Plex Mono", serif;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -20,19 +25,21 @@ body {
 }
 
 @media (max-width: 599px) {
+  #hourglass { width: 10vw; }
   .inline-container { width: 80vw; }
   .links-wrapper { width: 80vw; }
   #avatar { width: 50vw; height: 50vw; }
   #line-break { height: 2vh; }
   #title { font-size: 11vw; }
   #short-bio { font-size: 5vw; }
-  #bio-title { font-size: 11vw; }
-  #bio { font-size: 2.75vw; }
+  #bio-title { font-size: 9vw; }
+  #bio { font-size: 3vw; }
   #links-title { font-size: 11vw; }
   .links { font-size: 5vw; }
 }
 
 @media (min-width: 600px) and (max-width: 767px) {
+  #hourglass { width: 10vw; }
   .inline-container { width: 58vw; }
   .links-wrapper { width: 58vw; }
   #avatar { width: 40vw; height: 40vw; }
@@ -40,12 +47,13 @@ body {
   #title { font-size: 8vw; }
   #short-bio { font-size: 3.5vw; }
   #bio-title { font-size: 8vw; }
-  #bio { font-size: 2.5vw; }
+  #bio { font-size: 2vw; }
   #links-title { font-size: 8vw; }
   .links { font-size: 4vw; }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  #hourglass { width: 7vw; }
   .inline-container { width: 50vw; }
   .links-wrapper { width: 50vw; }
   #avatar { width: 32.5vw; height: 32.5vw; }
@@ -59,6 +67,7 @@ body {
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+  #hourglass { width: 5vw; }
   .inline-container { width: 40vw; }
   .links-wrapper { width: 40vw; }
   #avatar { width: 31vw; height: 31vw; }
@@ -72,6 +81,7 @@ body {
 }
 
 @media (min-width: 1200px) {
+  #hourglass { width: 5vw; }
   .inline-container { width: 36vw; }
   .links-wrapper { width: 36vw; }
   #line-break { height: 3vh; }
@@ -82,6 +92,38 @@ body {
   #bio { font-size: 1.25vw; }
   #links-title { font-size: 5vw; }
   .links { font-size: 2vw; }
+}
+
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #1a1b1e;
+  z-index: 5;
+}
+
+#hourglass {
+  filter: invert(100%) sepia(12%) saturate(127%) hue-rotate(169deg) brightness(119%) contrast(89%);
+}
+
+.preloader_row {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
 }
 
 ::-webkit-scrollbar {
@@ -125,7 +167,7 @@ select::-ms-expand {
   margin: 0;
   width: 100px;
   padding: 5px;
-  font-size: 15px;
+  font-size: 13px;
   border: 1px solid #f1f1f1;
   height: 30px;
   -webkit-appearance: none;

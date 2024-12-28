@@ -4,7 +4,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=language" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
@@ -16,9 +16,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
   </head>
   <body>
+    <div class="preloader">
+      <div class="preloader_row">
+        <img src="img/hourglass.svg" id="hourglass">
+      </div>
+    </div>
     <div id="home-container" class="container">
       <div class="language-changer">
-        <select id="language-select" class="jetbrains-mono">
+        <select id="language-select" class="ibm-plex-mono-light">
           <option value="en">English</option>
           <option value="ru">Русский</option>
         </select>
@@ -26,32 +31,31 @@
       <div class="inline-container">
         <img src="img/avatar.jpg" id="avatar" class="avatar">
         <div id="line-break"></div>
-        <h1 id="title" class="jetbrains-mono title"></h1>
+        <h1 id="title" class="ibm-plex-mono-medium title"></h1>
         <div id="line-break"></div>
-        <p id="short-bio" class="jetbrains-mono short-bio"></p>
+        <p id="short-bio" class="ibm-plex-mono-light short-bio"></p>
       </div>
     </div>
     <div id="bio-container" class="container">
       <div class="inline-container bio-div">
-        <h1 id="bio-title" class="jetbrains-mono bio-title"></h1>
+        <h1 id="bio-title" class="ibm-plex-mono-medium bio-title"></h1>
         <div id="line-break"></div>
-        <p id="bio" class="jetbrains-mono bio">
-        </p>
+        <p id="bio" class="ibm-plex-mono-light bio"></p>
       </div>
     </div>
     <div id="links-container" class="container">
       <div class="links-wrapper">
-        <h1 id="links-title" class="jetbrains-mono links-title"></h1>
+        <h1 id="links-title" class="ibm-plex-mono-medium links-title"></h1>
         <div id="links-div" class="links-div">
-          <a class="links jetbrains-mono" id="github" href="https://github.com/aiivy782">GitHub</a>
-          <a class="links jetbrains-mono" id="vk" href="https://vk.com/aiivy">VKontakte</a>
-          <a class="links jetbrains-mono" id="youtube" href="https://www.youtube.com/@unik0rn_music">YouTube</a>
-          <a class="links jetbrains-mono" id="tiktok" href="https://www.tiktok.com/@unik0rn_music">TikTok</a>
-          <a class="links jetbrains-mono" id="telegram" href="https://t.me/ai_ivy">Telegram</a>
-          <a class="links jetbrains-mono" id="spotify" href="https://open.spotify.com/artist/3GaVFv5GQwNhIfRwXvEDaj">Spotify</a>
-          <a class="links jetbrains-mono" id="soundcloud" href="https://soundcloud.com/unik0rn">SoundCloud</a>
-          <a class="links jetbrains-mono" id="yandexmusic" href="https://music.yandex.ru/artist/23240238">Yandex Music</a>
-          <a class="links jetbrains-mono" id="artstation" href="https://www.artstation.com/aiivy">ArtStation</a>
+          <a class="links ibm-plex-mono-light" id="github" href="https://github.com/aiivy782">GitHub</a>
+          <a class="links ibm-plex-mono-light" id="vk" href="https://vk.com/aiivy">VKontakte</a>
+          <a class="links ibm-plex-mono-light" id="youtube" href="https://www.youtube.com/@unik0rn_music">YouTube</a>
+          <a class="links ibm-plex-mono-light" id="tiktok" href="https://www.tiktok.com/@unik0rn_music">TikTok</a>
+          <a class="links ibm-plex-mono-light" id="telegram" href="https://t.me/ai_ivy">Telegram</a>
+          <a class="links ibm-plex-mono-light" id="spotify" href="https://open.spotify.com/artist/3GaVFv5GQwNhIfRwXvEDaj">Spotify</a>
+          <a class="links ibm-plex-mono-light" id="soundcloud" href="https://soundcloud.com/unik0rn">SoundCloud</a>
+          <a class="links ibm-plex-mono-light" id="yandexmusic" href="https://music.yandex.ru/artist/23240238">Yandex Music</a>
+          <a class="links ibm-plex-mono-light" id="artstation" href="https://www.artstation.com/aiivy">ArtStation</a>
         </div>
       </div>
     </div>
