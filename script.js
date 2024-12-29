@@ -5,6 +5,7 @@ window.onload = function () {
     document.body.classList.remove('loaded_hiding');
   }, 500);
 }
+
 document.addEventListener('DOMContentLoaded', function() {
   const languageSelect = document.getElementById('language-select');
   const content = {
@@ -17,10 +18,17 @@ document.addEventListener('DOMContentLoaded', function() {
     },
     ru: {
       title: "Егор Мунтьян",
-      shortBio: "17-летний музыкант EDM, самый преданный фанат видеоигр и немного графический дизайнер",
+      shortBio: "17-летний edm-музыкант, самый преданный фанат видеоигр и немного графический дизайнер",
       bioTitle: "Биография",
-      bio: "Родом из Сортавалы, Егор Мунтьян начинает пробовать себя в музыке EDM. С детства он слушал Deep House, Dubstep и UK Garage, в то время как его сверстники слушали Hip-Hop и Grime. В 12 лет Егор начал писать свою музыку, она была действительно ужасной, но с годами он приобрел множество знаний и опыта и хочет использовать их для популяризации музыки EDM в России. Егора также можно назвать 'компьютерным червем', потому что с детства он был очень привязан к компьютерам, всяким микрочипам. Он постоянно учился новому, пытался строить роботов, даже пытался написать свой вирус, чтобы посмеяться с друзьями. Теперь Егор очень хорошо знает, как работают компьютеры. Он умеет делать 3D-модели, работать в Photoshop, Illustrator, Blender, Cinema 4D и многих других программах. Естественно, Егор - заядлый геймер, он играл во многие известные и не очень известные игры, даже пытался сделать свою игру на Unreal Engine, но быстро потерял интерес.",
+      bio: "Родом из Сортавалы, Егор Мунтьян начинает пробовать себя в EDM-музыке. С детства он слушал Deep House, Dubstep и UK Garage, в то время как его сверстники слушали Hip-Hop и Grime. В 12 лет Егор начал писать свою музыку, по началу получалось действительно ужасно, но с годами он приобрел большой опыт и знания и хочет использовать их для популяризации EDM-музыки в России. Егора также можно назвать «компьютерным червем», потому что с детства его очень тянуло к компьютерам, всяким микросхемам. Он постоянно учился чему-то новому, пытался строить роботов, даже пытался написать свой вирус, чтобы посмеяться с друзьями. Сейчас Егор отлично знает, как работают компьютеры. Он умеет делать 3D-модели, работать в Photoshop, Illustrator, Blender, Cinema 4D и многих других программах. Егор, конечно, заядлый геймер, он переиграл во множество известных и не очень игр, даже пытался сделать свою собственную игру на Unreal Engine, но быстро потерял интерес.",
       linksTitle: "Ссылки"
+    },
+    fi: {
+      title: "Egor Muntian",
+      shortBio: "17-vuotias edm-muusikko, omistautunein videopelien fani ja hieman graafinen suunnittelija.",
+      bioTitle: "Elämäkerta",
+      bio: "Sortavalasta kotoisin oleva Egor Muntian on alkanut kokeilla EDM-musiikkia. Lapsesta lähtien hän kuunteli Deep Housea, Dubstepiä ja UK Garagea, kun taas hänen ikätoverinsa kuuntelivat Hip-Hopia ja Grimea. 12-vuotiaana Egor alkoi kirjoittaa omaa musiikkia, aluksi se oli todella kamalaa, mutta vuosien varrella hän on saanut paljon kokemusta ja tietoa ja haluaa käyttää sitä EDM-musiikin popularisoimiseksi Venäjällä. Egoria voi kutsua myös ”tietokonemadoksi”, koska hän on lapsesta asti ollut hyvin kiinnostunut tietokoneista ja kaikenlaisista mikrosiruista. Hän opetteli jatkuvasti jotain uutta, yritti rakentaa robotteja ja jopa kirjoittaa oman viruksen nauraakseen ystävilleen. Nyt Egor tietää hyvin, miten tietokoneet toimivat. Hän osaa tehdä 3D-malleja, työskennellä Photoshopissa, Illustratorissa, Blenderissä, Cinema 4D:ssä ja monissa muissa ohjelmissa. Egor on tietysti innokas pelaaja, hän on pelannut monia kuuluisia ja vähemmän kuuluisia pelejä, hän jopa yritti tehdä oman pelinsä Unreal Enginellä, mutta menetti nopeasti kiinnostuksensa.",
+      linksTitle: "Linkit"
     }
   };
 
