@@ -143,6 +143,7 @@ a:hover {
   border: #ebf4ff 1px solid;
   padding: 10px;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 @media (hover: hover) {
