@@ -1,0 +1,164 @@
+html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  user-select: none;
+}
+
+body {
+  height: 100dvh;
+  margin: 0;
+}
+
+.ibm-plex-mono-light {
+  font-family: "IBM Plex Mono", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ibm-plex-mono-medium {
+  font-family: "IBM Plex Mono", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@media (max-width: 599px) {
+  #hourglass { width: 10vw; }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  #hourglass { width: 10vw; }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #hourglass { width: 7vw; }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #hourglass { width: 5vw; }
+}
+
+@media (min-width: 1200px) {
+  #hourglass { width: 5vw; }
+}
+
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #263B54;
+  z-index: 5;
+}
+
+#hourglass {
+  filter: invert(100%) sepia(12%) saturate(127%) hue-rotate(169deg) brightness(119%) contrast(89%);
+}
+
+.preloader_row {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+
+#cycle-counter {
+  margin: 0;
+}
+
+#home-container {
+  min-height: 100dvh;
+  position: relative;
+  background-color: #263B54;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  text-align: center;
+  color: #8BA8CC;
+  padding: 10px;
+}
+
+a {
+  color: #8BA8CC;
+}
+
+a:hover {
+  color: #ebf4ff;
+}
+
+#footer-text {
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#header {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: #ebf4ff;
+  font-size: 75px;
+}
+
+.inline-container {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.button {
+  background-color: #ebf4ff;
+  border: #ebf4ff 1px solid;
+  padding: 10px;
+}
+
+@media (hover: hover) {
+  .button:hover {
+    background-color: #8BA8CC;
+    border: #8BA8CC 1px solid;
+  }
+}
+
+.button:active {
+  background-color: #5D80AA;
+  border: #5D80AA 1px solid;
+}
+
+#cycle-counter {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ebf4ff;
+  font-size: 18px;
+}
