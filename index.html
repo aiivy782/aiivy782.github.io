@@ -3,7 +3,6 @@
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
@@ -12,39 +11,40 @@
     <link rel="stylesheet" href="style.css">
     <title>aiivy782</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="17 y.o. edm musician, the most loyal videogames fan & a bit graphical designer">
   </head>
   <body>
     <div class="preloader">
       <div class="preloader_row">
-        <img src="img/hourglass.svg" id="hourglass">
+        <img src="img/hourglass.svg" id="hourglass" alt="loading...">
       </div>
     </div>
     <div id="home-container" class="container">
       <div class="language-changer">
         <select id="language-select" class="ibm-plex-mono-light">
           <option value="en">English</option>
+          <option value="es">Español</option>
           <option value="ru">Русский</option>
           <option value="fi">Suomi</option>
         </select>
       </div>
       <div class="inline-container">
-        <img src="img/avatar.jpg" id="avatar" class="avatar">
+        <img src="img/avatar.webp" id="avatar" class="image" alt="avatar">
         <h1 id="title" class="ibm-plex-mono-medium title"></h1>
-        <p id="short-bio" class="ibm-plex-mono-light short-bio"></p>
+        <p id="short-bio" class="ibm-plex-mono-light paragraph"></p>
       </div>
     </div>
     <div id="bio-container" class="container">
       <div class="inline-container bio-div">
-        <h1 id="bio-title" class="ibm-plex-mono-medium bio-title"></h1>
-        <div id="line-break"></div>
-        <p id="bio" class="ibm-plex-mono-light bio"></p>
+        <h1 id="bio-title" class="ibm-plex-mono-medium title"></h1>
+        <p id="bio" class="ibm-plex-mono-light paragraph"></p>
       </div>
     </div>
     <div id="links-container" class="container">
       <div class="links-wrapper">
-        <h1 id="links-title" class="ibm-plex-mono-medium links-title"></h1>
+        <h1 id="links-title" class="ibm-plex-mono-medium"></h1>
         <div id="links-div" class="links-div">
           <a class="links ibm-plex-mono-light" id="github" href="https://github.com/aiivy782">GitHub</a>
           <a class="links ibm-plex-mono-light" id="vk" href="https://vk.com/aiivy">VKontakte</a>
@@ -54,9 +54,17 @@
           <a class="links ibm-plex-mono-light" id="spotify" href="https://open.spotify.com/artist/3GaVFv5GQwNhIfRwXvEDaj">Spotify</a>
           <a class="links ibm-plex-mono-light" id="soundcloud" href="https://soundcloud.com/unik0rn">SoundCloud</a>
           <a class="links ibm-plex-mono-light" id="bandlink" href="https://band.link/unik0rn">BandLink</a>
-          <a class="links ibm-plex-mono-light" id="yandexmusic" href="https://linktr.ee/unik0rn_music">Linktree</a>
+          <a class="links ibm-plex-mono-light" id="linktree" href="https://linktr.ee/unik0rn_music">Linktree</a>
+          <a class="links ibm-plex-mono-light" id="yandexmusic" href="https://music.yandex.ru/artist/23240238">Yandex Music</a>
           <a class="links ibm-plex-mono-light" id="artstation" href="https://www.artstation.com/aiivy">ArtStation</a>
         </div>
+      </div>
+    </div>
+    <div id="releases" class="container">
+      <div class="inline-container" id="releases-div">
+        <h1 id="music" class="ibm-plex-mono-medium title"></h1>
+        <a href="https://tr.ee/4KnarkMQXI"><img id="cover" class="image" src="img/releases/need_u.webp" alt="Need U"></a>
+        <a href="https://tr.ee/r5roKergt0"><img id="cover" class="image" src="img/releases/closer.webp" alt="Closer"></a>
       </div>
     </div>
     <div id="project5217" class="container">

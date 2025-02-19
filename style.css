@@ -29,10 +29,12 @@ body {
   .inline-container { width: 80vw; gap: 1.5vh; }
   .links-wrapper { width: 80vw; }
   #avatar { width: 50vw; height: 50vw; }
+  #cover { width: 45vw; height: 45vw; }
   #title { font-size: 9vw; }
+  #music { font-size: 8vw; }
   #short-bio { font-size: 4vw; }
   #bio-title { font-size: 8vw; }
-  #bio { font-size: 2.75vw; }
+  #bio { font-size: 3vw; }
   #links-title { font-size: 8vw; }
   .links { font-size: 5vw; }
   #project5217-title { font-size: 10vw; }
@@ -43,10 +45,12 @@ body {
   .inline-container { width: 58vw; gap: 1.75vh; }
   .links-wrapper { width: 58vw; }
   #avatar { width: 40vw; height: 40vw; }
+  #cover { width: 35vw; height: 35vw; }
   #title { font-size: 8vw; }
+  #music { font-size: 7vw; }
   #short-bio { font-size: 3.5vw; }
   #bio-title { font-size: 7vw; }
-  #bio { font-size: 2.25vw; }
+  #bio { font-size: 2.5vw; }
   #links-title { font-size: 7vw; }
   .links { font-size: 4vw; }
   #project5217-title { font-size: 8.5vw; }
@@ -57,10 +61,12 @@ body {
   .inline-container { width: 50vw; gap: 2vh; }
   .links-wrapper { width: 50vw; }
   #avatar { width: 32.5vw; height: 32.5vw; }
+  #cover { width: 27.5vw; height: 27.5vw; }
   #title { font-size: 6.75vw; }
+  #music { font-size: 5.75vw; }
   #short-bio { font-size: 2.75vw; }
   #bio-title { font-size: 5.75vw; }
-  #bio { font-size: 1.75vw; }
+  #bio { font-size: 2vw; }
   #links-title { font-size: 5.75vw; }
   .links { font-size: 3vw; }
   #project5217-title { font-size: 7vw; }
@@ -71,10 +77,12 @@ body {
   .inline-container { width: 40vw; gap: 2.25vh; }
   .links-wrapper { width: 40vw; }
   #avatar { width: 31vw; height: 31vw; }
+  #cover { width: 26vw; height: 26vw; }
   #title { font-size: 5.5vw; }
+  #music { font-size: 4.5vw; }
   #short-bio { font-size: 2.5vw; }
   #bio-title { font-size: 4.5vw; }
-  #bio { font-size: 1.5vw; }
+  #bio { font-size: 1.75vw; }
   #links-title { font-size: 4.5vw; }
   .links { font-size: 2.5vw; }
   #project5217-title { font-size: 6vw; }
@@ -85,13 +93,20 @@ body {
   .inline-container { width: 36vw; gap: 2.5vh; }
   .links-wrapper { width: 36vw; }
   #avatar { width: 20vw; height: 20vw; }
+  #cover { width: 15vw; height: 15vw; }
   #title { font-size: 5vw; }
+  #music { font-size: 4vw; }
   #short-bio { font-size: 2vw; }
   #bio-title { font-size: 4vw; }
   #bio { font-size: 1.25vw; }
   #links-title { font-size: 4vw; }
   .links { font-size: 2vw; }
   #project5217-title { font-size: 5vw; }
+}
+
+a {
+  width: fit-content;
+  height: fit-content;
 }
 
 .preloader {
@@ -179,18 +194,24 @@ select::-ms-expand {
   position: relative;
 }
 
-#title {
+.title {
   margin: 0;
   text-align: center;
-  color: #f1f1f1;
   font-weight: 500;
 }
 
-#short-bio {
+#title {
+  color: #f1f1f1;
+}
+
+.paragraph {
   margin: 0;
   text-align: justify;
-  color: #f1f1f1;
   font-weight: 300;
+}
+
+#short-bio {
+  color: #f1f1f1;
 }
 
 .inline-container {
@@ -199,7 +220,7 @@ select::-ms-expand {
   align-self: center;
 }
 
-#avatar {
+.image {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -218,17 +239,11 @@ select::-ms-expand {
 }
 
 #bio {
-  margin: 0;
-  text-align: justify;
   color: #1a1b1e;
-  font-weight: 300;
 }
 
 #bio-title {
-  margin: 0;
-  text-align: center;
   color: #1a1b1e;
-  font-weight: 500;
 }
 
 #links-container {
@@ -263,6 +278,18 @@ select::-ms-expand {
   .links:hover {
     color: #ccc;
   }
+}
+
+#releases {
+  background-color: #f1f1f1;
+}
+
+#music {
+  color: #1a1b1e;
+}
+
+#releases-div {
+  align-items: center;
 }
 
 #project5217 {
