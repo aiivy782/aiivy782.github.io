@@ -187,6 +187,7 @@ select::-ms-expand {
   height: 30px;
   appearance: none;
   background: url(/img/language.svg) 93% / 15% no-repeat #f1f1f1;
+  position: fixed;
 }
 
 #home-container {
